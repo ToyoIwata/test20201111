@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+  background-color:#dcdcdc
+}
+
+a {
+  float:left;
+  color: white;
+  text-decoration: none;
+}
+
+
+header {
+  height: 90px;
+  width: 100%;
+  background-color: #17184b;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header-list-container {
+  float: right;
+}
+
+.header-logo {
+  float: left;
+  font-size: 30px;
+  color: white;
+  padding: 25px 40px;
+}
+
+.header-list {
+  float: left;
+  color: white;
+  color: white;
+  padding: 33px 20px;
+  border-left: 1px solid white;
+  text-decoration: none;
+}
+
+
+.header-list-container: hover {
+  background-color: transparent;
+}
+
+
+
+.top-container {
+  height: 200px;
+  padding: 30px;
+  margin: 0auto;
+}
+
+.top-wrapper01 {
+  padding-top: 180px;
+  padding-bottom: 100px;
+  background-image: url("./image/top_01.jpg");
+  color: white;
+  background-size: cover;
+}
+
+.top-wrapper02 {
+  padding-top: 180px;
+  padding-bottom: 100px;
+  background-image: url("./image/top_02.jpg");
+  color: white;
+  background-size: cover;
+}
+
+.top-wrapper03 {
+  padding-top: 180px;
+  padding-bottom: 100px;
+  background-image: url("./image/top_03.jpg");
+  color: white;
+  background-size: cover;
+}
+
+.top-wrapper04 {
+  padding-top: 180px;
+  padding-bottom: 100px;
+  background-image: url("./image/top_04.jpg");
+  color: white;
+  background-size: cover;
+}
+
+.top-wrapper05 {
+  padding-top: 180px;
+  padding-bottom: 100px;
+  background-image: url("./image/top_01.jpg");
+  color: white;
+  background-size: cover;
+}
+
+.top-logo {
+  padding-top: 100px
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.place {
+  padding-top: 50px;
+  color: white;
+  font-size: 40px;
+}
+
+.main-wrapper {
+  margin: 30px;
+  background-color: white;
+  text-align: center;
+  margin: 30px;
+}
+
+h1 {
+  margin-left: 20px;
+  color: #17184b;
+  font-size: 30px;
+}
+
+
+.main-wrapper {
+  padding-top: 50px;
+  background-color: white;
+  text-align: left;
+  padding: 20px;
+  margin: 30px;
+}
+
+.main-container {
+  padding: 20px;
+}
+
+.review-title {
+  padding-top: 20px;
+  text-align: left;
+  font-size: 20px;
+  color: olive;
+}
+
+footer {
+  color: white;
+  background-color: #17184b;
+  height: 110px;
+  width: 100%;
+}
+
+.footer-container {
+  padding: 20px 30px;
+}
+
+.footer-logo {
+  font-size: 20px;
+}
+
+.copyright {
+  padding-top: 60px;
+  font-size: 15px;
+}
+
+.footer-list {
+  float: right;
+  list-style: none;
+  margin-right: 30px;
+}
+
+li {
+  list-style: none;
+}

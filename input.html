@@ -10,10 +10,10 @@
       <div class="header-container">
         <a href="https://www.toyo.ac.jp/ja-JP/" class="header-logo"><b>東洋大学</b></a>
         <div class="header-list-container">
-         <a class="header-list" href="index.html">Top Page</a>
+         <a class="header-list" href="index.php">Top Page</a>
          <a class="header-list" href="howto.html">利用方法</a>
-         <a class="header-list" href="browse.html">レビューを見る</a>
-         <a class="header-list" href="input.html">レビューを書く</a>
+         <a class="header-list" href="browse.php">レビューを見る</a>
+         <a class="header-list" href="input.php">レビューを書く</a>
          <a class="header-list" href="https://g-sys.toyo.ac.jp/portal/">Toyonet-G</a>
          <a class="header-list" href="mypage.html">マイページ</a>
         </div>
@@ -36,25 +36,25 @@
          講義名：<select name="genre" id="genre" onchange="createReview(this.value)">
         　 <option disabled selected>講義カテゴリを選択してください</option>
             <optgroup label="基盤教育">
-             <option value="philosophy">哲学・思想</option>
-             <option value="kiso">学問の基礎</option>
-             <option value="international01">国際人の形成(英語系)</option>
-             <option value="international02">国際人の形成(語学系)</option>
-             <option value="international03">国際人の形成(留学系)</option>
-             <option value="career">キャリア・市民形成</option>
-             <option value="sogo">総合・学際</option>
-             <option value="abroad">留学支援科目</option>
+             <option value="philosophy" name="philosophy">哲学・思想</option>
+             <option value="kiso" name="kiso">学問の基礎</option>
+             <option value="international01" name="international01">国際人の形成(英語系)</option>
+             <option value="international02" name="international02">国際人の形成(語学系)</option>
+             <option value="international03" name="international03">国際人の形成(留学系)</option>
+             <option value="career" name="career">キャリア・市民形成</option>
+             <option value="sogo" name="sogo">総合・学際</option>
+             <option value="abroad" name="abroad">留学支援科目</option>
             </optgroup>
             <optgroup label="学科共通科目">
-             <option value="Basic-subject">基礎科目</option>
-             <option value="Business-subject">ビジネス関係科目</option>
-             <option value="Social-researcher">社会調査士関係科目</option>
+             <option value="Basic-subject" name="Basic-subject">基礎科目</option>
+             <option value="Business-subject" name="Business-subject">ビジネス関係科目</option>
+             <option value="Social-researcher" name="Social-researcher">社会調査士関係科目</option>
             <optgroup label="専門科目">
              <option value="Compulsory">必修</option>
-             <option value="System">システム情報コース</option>
-             <option value="Sports">スポーツ情報コース</option>
-             <option value="Media">メディア文化コース</option>
-             <option value="Teaching">教職関係科目</option>
+             <option value="System" name="System">システム情報コース</option>
+             <option value="Sports" name="Sports">スポーツ情報コース</option>
+             <option value="Media" name="Media">メディア文化コース</option>
+             <option value="Teaching" name="Teaching">教職関係科目</option>
             </optgroup>
           </select>
           <select name="subList" id="subList" disabled>
@@ -63,17 +63,17 @@
          担当講師：<input type="text" name="TeacherName">先生<br>
           <div class="review-title"><b>担当講師について</b></div>
           <p>1.担当講師への私的信頼度(個人的な高感度、授業外での印象等)を選択してください。</p>
-          非常に低い　<input type="radio" id="1" name="radio01"><label for="1">1</label>
-           <input type="radio" id="2" name="radio01"><label for="2">2</label>
-           <input type="radio" id="3" name="radio01"><label for="3">3</label>
-           <input type="radio" id="4" name="radio01"><label for="4">4</label>
-           <input type="radio" id="5" name="radio01"><label for="5">5</label>　非常に高い
+          非常に低い <input type="radio" name="radio01" value="1">1</input>
+          <input type="radio" name="radio01" value="2">2</input>
+          <input type="radio" name="radio01" value="3">3</input>
+          <input type="radio" name="radio01" value="4">4</input>
+          <input type="radio" name="radio01" value="5">5</input> 非常に高い
           <p>2.担当教員への授業内での信頼度(話し方やスピード・態度や接し方等の総合評価・講義内容とは関係がないもの)を選択してください。</p>
-          非常に低い　<input type="radio" id="1" name="radio02"><label for="male">1</label>
-           <input type="radio" id="2" name="radio02"><label for="1">2</label>
-           <input type="radio" id="3" name="radio02"><label for="2">3</label>
-           <input type="radio" id="4" name="radio02"><label for="3">4</label>
-           <input type="radio" id="5" name="radio02"><label for="4">5</label>　非常に高い
+          非常に低い　<input type="radio" name="radio02" value="1">1</input>
+           <input type="radio" name="radio02" value="2">2</input>
+           <input type="radio" name="radio02" value="3">3</input>
+           <input type="radio" name="radio02" value="4">4</input>
+           <input type="radio" name="radio02" value="5">5</input>　非常に高い
           <p>3.講義内資料(配布資料・講義スライド等)の見やすさ、わかりやすさを選択してください。</p>
            非常に悪い　<input type="radio" id="1" name="radio03"><label for="1">1</label>
            <input type="radio" id="2" name="radio03"><label for="2">2</label>
@@ -81,7 +81,7 @@
            <input type="radio" id="4" name="radio03"><label for="4">4</label>
            <input type="radio" id="5" name="radio03"><label for="5">5</label>　非常に良い
           <p>4.その他担当講師について特筆すべきことがあれば記入してください。<br>
-           <textarea name="comment" cols="50" rows="10"></textarea></p>
+           <textarea name="comment01" cols="50" rows="10"></textarea></p>
            <div class="review-title"><b>講義内容について</b></div>
            <p>1.講義の成績評価方法を選択してください。(複数回答可)</p>
            <input type="checkbox" name="h-evaluate" value="test01">中間・期末テスト<br>
@@ -116,7 +116,7 @@
            <input type="radio" id="yes" name="radio06"><label for="yes">有</label>
            <input type="radio" id="no" name="radio06"><label for="no">無</label>
           <p>6.その他講義内容について特筆すべきことがあれば記入してください。</p>
-           <textarea name="comment" cols="50" rows="10"></textarea></p>
+           <textarea name="comment02" cols="50" rows="10"></textarea></p>
            <div class="review-title"><b>講義の雰囲気について</b></div>
           <p>1.あなたが履修した際、同時に講義を受講していた学生の人数を選択してください。</p>
            <input type="radio" id="1" name="radio07"><label for="1">10人以下</label><br>
@@ -137,7 +137,7 @@
            <input type="radio" id="no" name="radio09"><label for="no">無</label>
           <p>4.その他講義の雰囲気について特筆すべきことがあれば記入してください。</p>
            <textarea name="comment" cols="50" rows="10"></textarea></p>
-          <p><input type="submit" value="送信する"></p>
+          <p><input type="submit03" value="送信する"></p>
          </form>
         </div>
       </div>
